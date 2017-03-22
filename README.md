@@ -4,10 +4,9 @@
 ##### {mr3313, pk1913, ace13, njw13, sz51112}@ic.ac.uk
 ##### *Imperial College London*
 
-[![helmo logo](art/png/helmo-logo-lowercase.png "Helmo Logo")][youtube_link]
-Video :video_camera: link: [Youtube][youtube_link]
+[![helmo logo](art/png/helmo-logo-lowercase.png "Helmo Video")][youtube_link]
 
-[youtube_link]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+Video :video_camera: link: [Youtube][youtube_link]
 
 Our project, targeted at urban cyclists :bike:, is about building a system based around a helmet that determines when the user has fallen. A helmet-mounted device containing an inertial measurement unit (IMU) communicates to an iOS smartphone, via Bluetooth, the user's motion over 6 axes, as the user is falling. This data is recorded by the app and synced to a database hosted on the cloud :cloud:. 
 
@@ -26,3 +25,6 @@ This repository is compose of the following directories:
 ### Quick links:
 	- [Design Report](docs/helmo-design-report.pdf)
 	- [Final Report](docs/helmo-final-report.pdf)
+
+  
+[youtube_link]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
