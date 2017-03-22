@@ -38,12 +38,17 @@ protocol CoreMotionTestModelDelegate: class {
 }
 
 class CoreMotionTestModel: NSObject {
+    // aX, maxMag, minMag, peak, num elements
+    let weights: [Double] = [-2.0, 6.58, 40e-3, -2.62, 81.0]
+    let thresholdNumElements = 0.66
     
     var motionManager: CMMotionManager! = nil
     
     var xAccMax: Double = 0.0
     var yAccMax: Double = 0.0
     var zAccMax: Double = 0.0
+    var accMagMax: Double = 0.0
+    var accMagMin: Double = 0.0
     
     var accContainer = MotionDataContainer()
     var accMag = [Double]()
@@ -105,16 +110,29 @@ class CoreMotionTestModel: NSObject {
     }
     
     fileprivate func processMagnitudes() {
-        // find max
-        if let max = accMag.max() {
-            if max > fallThreshold {
-                print("Fall detected!")
-                delegate?.fallDetected(self, state: true)
-            }
-        }
+//        // find max
+//        if let max = accMag.max() {
+//            if max > fallThreshold {
+//                print("Fall detected!")
+//                delegate?.fallDetected(self, state: true)
+//            }
+//        }
         
         // find min
+        let numEl = numElementsBelowThreshold(array: accMag, threshold: thresholdNumElements)
+        let peakToPeak = accMagMax - accMagMin
         
+        let a0 = accContainer.x.last ?? 0.0 * weights[0]
+        let a1 = accMagMax * weights[1]
+        let a2 = accMagMin * weights[2]
+        let a3 = peakToPeak * weights[3]
+        let a4 = numEl * weights[4]
+        
+        let sum = a0 + a1 + a2 + a3 + a4
+        if (sum > 0) {
+            print("Fall detected!")
+            delegate?.fallDetected(self, state: true)
+        }
         
         // find mean
     }
@@ -164,8 +182,22 @@ class CoreMotionTestModel: NSObject {
         xAccMax = accContainer.x.max() ?? 0.0
         yAccMax = accContainer.y.max() ?? 0.0
         zAccMax = accContainer.z.max() ?? 0.0
+        accMagMax = accMag.max() ?? 0.0
+        accMagMin = accMag.min() ?? 0.0
         
     }
+}
+
+private func numElementsBelowThreshold(array: [Double], threshold: Double) -> Int {
+    var count = 0
+    
+    for i in 0..<array.count {
+        if array[i] < threshold {
+            count = count + 1
+        }
+    }
+    
+    return count
 }
 
 extension CoreMotionTestModel: GraphViewDataSource {
