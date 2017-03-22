@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A30FE7B11E6E2F3A00312DE2 /* HelmoFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30FE7B01E6E2F3A00312DE2 /* HelmoFaceView.swift */; };
+		A30FE7B31E6F115A00312DE2 /* HelmetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30FE7B21E6F115A00312DE2 /* HelmetViewController.swift */; };
+		A323D0501E6DCC1500EF56C7 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A323D04E1E6DCC1500EF56C7 /* Montserrat-Bold.ttf */; };
+		A323D0511E6DCC1500EF56C7 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A323D04F1E6DCC1500EF56C7 /* Montserrat-Regular.ttf */; };
+		A3327E3D1E66F28600D3260A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3327E3C1E66F28600D3260A /* AppDelegate.swift */; };
+		A3327E421E66F28600D3260A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3327E401E66F28600D3260A /* Main.storyboard */; };
+		A3327E441E66F28600D3260A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3327E431E66F28600D3260A /* Assets.xcassets */; };
+		A3327E471E66F28600D3260A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3327E451E66F28600D3260A /* LaunchScreen.storyboard */; };
+		A3327E521E66F28600D3260A /* HelmoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3327E511E66F28600D3260A /* HelmoTests.swift */; };
+		A3327E5D1E670BBC00D3260A /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = A3327E5C1E670BBC00D3260A /* Shaders.metal */; };
+		A3734D031E69FFFB00C821E2 /* MetalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3734D021E69FFFB00C821E2 /* MetalViewController.swift */; };
+		A380FB9B1E6A053700135F58 /* HelmetSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A380FB9A1E6A053700135F58 /* HelmetSceneViewController.swift */; };
+		A380FB9D1E6A076100135F58 /* BufferProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A380FB9C1E6A076100135F58 /* BufferProvider.swift */; };
+		A380FBA31E6A0D0D00135F58 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = A380FB9F1E6A0D0D00135F58 /* Cube.swift */; };
+		A380FBA41E6A0D0D00135F58 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = A380FBA01E6A0D0D00135F58 /* Node.swift */; };
+		A380FBA51E6A0D0D00135F58 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A380FBA11E6A0D0D00135F58 /* Triangle.swift */; };
+		A380FBA61E6A0D0D00135F58 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A380FBA21E6A0D0D00135F58 /* Vertex.swift */; };
+		A380FBAA1E6A258100135F58 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = A380FBA91E6A258100135F58 /* Light.swift */; };
+		A380FBAC1E6C90C600135F58 /* float4x4+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A380FBAB1E6C90C600135F58 /* float4x4+Extensions.swift */; };
+		A380FBAE1E6CF7D100135F58 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A380FBAD1E6CF7D100135F58 /* Model.swift */; };
+		A3A62B541E6F1EF800017E86 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A62B531E6F1EF800017E86 /* BluetoothManager.swift */; };
+		A3A62B561E70585000017E86 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A62B551E70585000017E86 /* BaseTabBarController.swift */; };
+		A3A62B581E718D3300017E86 /* FallTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A62B571E718D3300017E86 /* FallTableViewController.swift */; };
+		A3A62B5A1E71A44400017E86 /* FallCellObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A62B591E71A44400017E86 /* FallCellObject.swift */; };
+		A3A62B621E71A68900017E86 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A62B5F1E71A68900017E86 /* Alamofire.framework */; };
+		A3A62B631E71A68900017E86 /* MarqueeLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A62B601E71A68900017E86 /* MarqueeLabel.framework */; };
+		A3A62B641E71A68900017E86 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A62B611E71A68900017E86 /* SwiftyJSON.framework */; };
+		A3A62B661E73271C00017E86 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A62B651E73271C00017E86 /* WebServiceManager.swift */; };
+		A3D5ABBA1E6D11210017E6AA /* Data in Resources */ = {isa = PBXBuildFile; fileRef = A3D5ABB91E6D11210017E6AA /* Data */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3327E4E1E66F28600D3260A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3327E311E66F28600D3260A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3327E381E66F28600D3260A;
+			remoteInfo = Helmo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A30FE7B01E6E2F3A00312DE2 /* HelmoFaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelmoFaceView.swift; sourceTree = "<group>"; };
+		A30FE7B21E6F115A00312DE2 /* HelmetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelmetViewController.swift; sourceTree = "<group>"; };
+		A323D04E1E6DCC1500EF56C7 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.ttf"; path = "Fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		A323D04F1E6DCC1500EF56C7 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "Fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		A3327E391E66F28600D3260A /* Helmo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Helmo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3327E3C1E66F28600D3260A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3327E411E66F28600D3260A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3327E431E66F28600D3260A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3327E461E66F28600D3260A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3327E481E66F28600D3260A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3327E4D1E66F28600D3260A /* HelmoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelmoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3327E511E66F28600D3260A /* HelmoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelmoTests.swift; sourceTree = "<group>"; };
+		A3327E531E66F28600D3260A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3327E5C1E670BBC00D3260A /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		A3734D021E69FFFB00C821E2 /* MetalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalViewController.swift; sourceTree = "<group>"; };
+		A380FB9A1E6A053700135F58 /* HelmetSceneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelmetSceneViewController.swift; sourceTree = "<group>"; };
+		A380FB9C1E6A076100135F58 /* BufferProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BufferProvider.swift; sourceTree = "<group>"; };
+		A380FB9F1E6A0D0D00135F58 /* Cube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cube.swift; path = Nodes/Cube.swift; sourceTree = "<group>"; };
+		A380FBA01E6A0D0D00135F58 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Nodes/Node.swift; sourceTree = "<group>"; };
+		A380FBA11E6A0D0D00135F58 /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Triangle.swift; path = Nodes/Triangle.swift; sourceTree = "<group>"; };
+		A380FBA21E6A0D0D00135F58 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vertex.swift; path = Nodes/Vertex.swift; sourceTree = "<group>"; };
+		A380FBA91E6A258100135F58 /* Light.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
+		A380FBAB1E6C90C600135F58 /* float4x4+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "float4x4+Extensions.swift"; sourceTree = "<group>"; };
+		A380FBAD1E6CF7D100135F58 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A3A62B531E6F1EF800017E86 /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		A3A62B551E70585000017E86 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		A3A62B571E718D3300017E86 /* FallTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallTableViewController.swift; sourceTree = "<group>"; };
+		A3A62B591E71A44400017E86 /* FallCellObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallCellObject.swift; sourceTree = "<group>"; };
+		A3A62B5D1E71A65300017E86 /* 7D188E05-1C5C-38C3-96B4-BB3156F4BC7A.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "7D188E05-1C5C-38C3-96B4-BB3156F4BC7A.bcsymbolmap"; path = "Carthage/Build/iOS/7D188E05-1C5C-38C3-96B4-BB3156F4BC7A.bcsymbolmap"; sourceTree = "<group>"; };
+		A3A62B5F1E71A68900017E86 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		A3A62B601E71A68900017E86 /* MarqueeLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarqueeLabel.framework; path = Carthage/Build/iOS/MarqueeLabel.framework; sourceTree = "<group>"; };
+		A3A62B611E71A68900017E86 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		A3A62B651E73271C00017E86 /* WebServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
+		A3D5ABB91E6D11210017E6AA /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3327E361E66F28600D3260A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A62B621E71A68900017E86 /* Alamofire.framework in Frameworks */,
+				A3A62B631E71A68900017E86 /* MarqueeLabel.framework in Frameworks */,
+				A3A62B641E71A68900017E86 /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3327E4A1E66F28600D3260A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A323D04D1E6DCBF400EF56C7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A323D04E1E6DCC1500EF56C7 /* Montserrat-Bold.ttf */,
+				A323D04F1E6DCC1500EF56C7 /* Montserrat-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		A3327E301E66F28600D3260A = {
+			isa = PBXGroup;
+			children = (
+				A3D5ABB91E6D11210017E6AA /* Data */,
+				A3327E3B1E66F28600D3260A /* Helmo */,
+				A3327E501E66F28600D3260A /* HelmoTests */,
+				A3327E3A1E66F28600D3260A /* Products */,
+				A3A62B5C1E71A65300017E86 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A3327E3A1E66F28600D3260A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3327E391E66F28600D3260A /* Helmo.app */,
+				A3327E4D1E66F28600D3260A /* HelmoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3327E3B1E66F28600D3260A /* Helmo */ = {
+			isa = PBXGroup;
+			children = (
+				A323D04D1E6DCBF400EF56C7 /* Fonts */,
+				A380FB9E1E6A0CD600135F58 /* Nodes */,
+				A3A62B551E70585000017E86 /* BaseTabBarController.swift */,
+				A30FE7B21E6F115A00312DE2 /* HelmetViewController.swift */,
+				A3A62B571E718D3300017E86 /* FallTableViewController.swift */,
+				A3A62B591E71A44400017E86 /* FallCellObject.swift */,
+				A3A62B651E73271C00017E86 /* WebServiceManager.swift */,
+				A30FE7B01E6E2F3A00312DE2 /* HelmoFaceView.swift */,
+				A380FBAB1E6C90C600135F58 /* float4x4+Extensions.swift */,
+				A3327E5C1E670BBC00D3260A /* Shaders.metal */,
+				A3327E3C1E66F28600D3260A /* AppDelegate.swift */,
+				A380FB9A1E6A053700135F58 /* HelmetSceneViewController.swift */,
+				A3734D021E69FFFB00C821E2 /* MetalViewController.swift */,
+				A3327E401E66F28600D3260A /* Main.storyboard */,
+				A3A62B531E6F1EF800017E86 /* BluetoothManager.swift */,
+				A3327E431E66F28600D3260A /* Assets.xcassets */,
+				A3327E451E66F28600D3260A /* LaunchScreen.storyboard */,
+				A3327E481E66F28600D3260A /* Info.plist */,
+				A380FB9C1E6A076100135F58 /* BufferProvider.swift */,
+			);
+			path = Helmo;
+			sourceTree = "<group>";
+		};
+		A3327E501E66F28600D3260A /* HelmoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3327E511E66F28600D3260A /* HelmoTests.swift */,
+				A3327E531E66F28600D3260A /* Info.plist */,
+			);
+			path = HelmoTests;
+			sourceTree = "<group>";
+		};
+		A380FB9E1E6A0CD600135F58 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				A380FB9F1E6A0D0D00135F58 /* Cube.swift */,
+				A380FBA01E6A0D0D00135F58 /* Node.swift */,
+				A380FBA11E6A0D0D00135F58 /* Triangle.swift */,
+				A380FBA21E6A0D0D00135F58 /* Vertex.swift */,
+				A380FBA91E6A258100135F58 /* Light.swift */,
+				A380FBAD1E6CF7D100135F58 /* Model.swift */,
+			);
+			name = Nodes;
+			sourceTree = "<group>";
+		};
+		A3A62B5C1E71A65300017E86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3A62B5F1E71A68900017E86 /* Alamofire.framework */,
+				A3A62B601E71A68900017E86 /* MarqueeLabel.framework */,
+				A3A62B611E71A68900017E86 /* SwiftyJSON.framework */,
+				A3A62B5D1E71A65300017E86 /* 7D188E05-1C5C-38C3-96B4-BB3156F4BC7A.bcsymbolmap */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3327E381E66F28600D3260A /* Helmo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3327E561E66F28600D3260A /* Build configuration list for PBXNativeTarget "Helmo" */;
+			buildPhases = (
+				A3327E351E66F28600D3260A /* Sources */,
+				A3327E361E66F28600D3260A /* Frameworks */,
+				A3327E371E66F28600D3260A /* Resources */,
+				A3A62B5B1E71A5EB00017E86 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Helmo;
+			productName = Helmo;
+			productReference = A3327E391E66F28600D3260A /* Helmo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3327E4C1E66F28600D3260A /* HelmoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3327E591E66F28600D3260A /* Build configuration list for PBXNativeTarget "HelmoTests" */;
+			buildPhases = (
+				A3327E491E66F28600D3260A /* Sources */,
+				A3327E4A1E66F28600D3260A /* Frameworks */,
+				A3327E4B1E66F28600D3260A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3327E4F1E66F28600D3260A /* PBXTargetDependency */,
+			);
+			name = HelmoTests;
+			productName = HelmoTests;
+			productReference = A3327E4D1E66F28600D3260A /* HelmoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3327E311E66F28600D3260A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Mihnea Rusu";
+				TargetAttributes = {
+					A3327E381E66F28600D3260A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 68J4BJRZP2;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					A3327E4C1E66F28600D3260A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 68J4BJRZP2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A3327E381E66F28600D3260A;
+					};
+				};
+			};
+			buildConfigurationList = A3327E341E66F28600D3260A /* Build configuration list for PBXProject "Helmo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3327E301E66F28600D3260A;
+			productRefGroup = A3327E3A1E66F28600D3260A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3327E381E66F28600D3260A /* Helmo */,
+				A3327E4C1E66F28600D3260A /* HelmoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3327E371E66F28600D3260A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A323D0511E6DCC1500EF56C7 /* Montserrat-Regular.ttf in Resources */,
+				A323D0501E6DCC1500EF56C7 /* Montserrat-Bold.ttf in Resources */,
+				A3D5ABBA1E6D11210017E6AA /* Data in Resources */,
+				A3327E471E66F28600D3260A /* LaunchScreen.storyboard in Resources */,
+				A3327E441E66F28600D3260A /* Assets.xcassets in Resources */,
+				A3327E421E66F28600D3260A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3327E4B1E66F28600D3260A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A3A62B5B1E71A5EB00017E86 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MarqueeLabel.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3327E351E66F28600D3260A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A62B561E70585000017E86 /* BaseTabBarController.swift in Sources */,
+				A3327E5D1E670BBC00D3260A /* Shaders.metal in Sources */,
+				A380FBAC1E6C90C600135F58 /* float4x4+Extensions.swift in Sources */,
+				A380FB9D1E6A076100135F58 /* BufferProvider.swift in Sources */,
+				A380FBAE1E6CF7D100135F58 /* Model.swift in Sources */,
+				A3A62B5A1E71A44400017E86 /* FallCellObject.swift in Sources */,
+				A3A62B581E718D3300017E86 /* FallTableViewController.swift in Sources */,
+				A3A62B541E6F1EF800017E86 /* BluetoothManager.swift in Sources */,
+				A380FBA41E6A0D0D00135F58 /* Node.swift in Sources */,
+				A30FE7B31E6F115A00312DE2 /* HelmetViewController.swift in Sources */,
+				A30FE7B11E6E2F3A00312DE2 /* HelmoFaceView.swift in Sources */,
+				A380FBA61E6A0D0D00135F58 /* Vertex.swift in Sources */,
+				A380FBAA1E6A258100135F58 /* Light.swift in Sources */,
+				A380FBA31E6A0D0D00135F58 /* Cube.swift in Sources */,
+				A3A62B661E73271C00017E86 /* WebServiceManager.swift in Sources */,
+				A380FB9B1E6A053700135F58 /* HelmetSceneViewController.swift in Sources */,
+				A380FBA51E6A0D0D00135F58 /* Triangle.swift in Sources */,
+				A3327E3D1E66F28600D3260A /* AppDelegate.swift in Sources */,
+				A3734D031E69FFFB00C821E2 /* MetalViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3327E491E66F28600D3260A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3327E521E66F28600D3260A /* HelmoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3327E4F1E66F28600D3260A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3327E381E66F28600D3260A /* Helmo */;
+			targetProxy = A3327E4E1E66F28600D3260A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A3327E401E66F28600D3260A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3327E411E66F28600D3260A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3327E451E66F28600D3260A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3327E461E66F28600D3260A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3327E541E66F28600D3260A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3327E551E66F28600D3260A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3327E571E66F28600D3260A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 68J4BJRZP2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Helmo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mihnearusu.Helmo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A3327E581E66F28600D3260A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 68J4BJRZP2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Helmo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mihnearusu.Helmo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A3327E5A1E66F28600D3260A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 68J4BJRZP2;
+				INFOPLIST_FILE = HelmoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mihnearusu.HelmoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Helmo.app/Helmo";
+			};
+			name = Debug;
+		};
+		A3327E5B1E66F28600D3260A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 68J4BJRZP2;
+				INFOPLIST_FILE = HelmoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mihnearusu.HelmoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Helmo.app/Helmo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3327E341E66F28600D3260A /* Build configuration list for PBXProject "Helmo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3327E541E66F28600D3260A /* Debug */,
+				A3327E551E66F28600D3260A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3327E561E66F28600D3260A /* Build configuration list for PBXNativeTarget "Helmo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3327E571E66F28600D3260A /* Debug */,
+				A3327E581E66F28600D3260A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3327E591E66F28600D3260A /* Build configuration list for PBXNativeTarget "HelmoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3327E5A1E66F28600D3260A /* Debug */,
+				A3327E5B1E66F28600D3260A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3327E311E66F28600D3260A /* Project object */;
+}
