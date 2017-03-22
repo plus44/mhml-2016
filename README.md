@@ -15,16 +15,16 @@ Users may view a list of their falls from within the app. Falls can be visualise
 ## Contents
 
 This repository is compose of the following directories:
-	- **[app](app)** iOS app source code for both the device-side app that was shown in the demo and the actual app. Carthage dependencies are included, but ideally you should resync them
-	- **[art](art)** Design files used for the project, in various formats
-	- **[docs](docs)** Reports written for this project (including the individual reports)
-	- **[eval](eval)** Evaluation survey handed out to the participants of our testing
-	- **[hardware](hardware)** Firmware source code for the microcontrollers
-	- **[server](server)** Server-side source code for the web service
+  - **[app](app)** iOS app source code for both the device-side app that was shown in the demo and the actual app. Carthage dependencies are included, but ideally you should resync them
+  - **[art](art)** Design files used for the project, in various formats
+  - **[docs](docs)** Reports written for this project (including the individual reports)
+  - **[eval](eval)** Evaluation survey handed out to the participants of our testing
+  - **[hardware](hardware)** Firmware source code for the microcontrollers
+  - **[server](server)** Server-side source code for the web service
 
 ### Quick links:
-	- [Design Report](docs/helmo-design-report.pdf)
-	- [Final Report](docs/helmo-final-report.pdf)
+  - [Design Report](docs/helmo-design-report.pdf)
+  - [Final Report](docs/helmo-final-report.pdf)
 
-  
+
 [youtube_link]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
